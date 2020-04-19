@@ -15,7 +15,7 @@ html { box-sizing: border-box; }
 /*page layout*/
 .default_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
 
-.text_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: column; }
+.text_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; }
 
 .image_div { flex: 30%; padding: 0; margin: 0; }
 
