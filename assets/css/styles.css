@@ -13,7 +13,7 @@ html { box-sizing: border-box; }
 #ccbdb3 clair
 */
 /*page layout*/
-.default_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
+.default_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; flex-flow: column;}
 
 .text_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; }
 
