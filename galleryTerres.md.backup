@@ -2,122 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Gallery Terres</title>
-      <link rel="stylesheet" href="simon-yung.github.io/website/assets/css/styles.css">
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-      <script src="simon-yung.github.io/website/assets/js/modal_gallery.js" defer> </script>
+      <title>Helene Yousse Gallery Terres</title>
+      <link rel="stylesheet" href="/website/assets/css/styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;600&display=swap" rel="stylesheet">
   </head>
-  <body class="default_page_flex">
-    
-<div class="sidebar">
-  <div class="header">
-    <!--<p class="artist_name">HELENE<br>YOUSSE</p>
-    <p class="artist_sub_name">Sculpture</p>-->
-    <img class="logo" src=" simon-yung.github.io/website/assets/images/home/logo.png ">
-  </div>
-
-<!--
-  <div class="flag_menu">
-    
-      <a href="" style="text-decoration: none">
-        <img src="/assets/images/flags/fra.png" style="height:25px">
-      </a>
-    
-      <a href="" style="text-decoration: none">
-        <img src="/assets/images/flags/all.png" style="height:25px">
-      </a>
-    
-      <a href="" style="text-decoration: none">
-        <img src="/assets/images/flags/eng.png" style="height:25px">
-      </a>
-    
-      <a href="" style="text-decoration: none">
-        <img src="/assets/images/flags/esp.png" style="height:25px">
-      </a>
-    
-      <a href="" style="text-decoration: none">
-        <img src="/assets/images/flags/cat.png" style="height:25px">
-      </a>
-    
-  </div>
--->
-  <div  class="sidebar_card">
-  <div class="nav_list_box">
-    
-      <a href="/" style="text-decoration: none" 
-         class="nav_list"
-        >
-        &#9679;&nbsp;Home<br>
-      </a>
-    
-      <a href="/about.html" style="text-decoration: none" 
-         class="nav_list"
-        >
-        &#9679;&nbsp;About&nbsp;ME<br>
-      </a>
-    
-      <a href="/explanation.html" style="text-decoration: none" 
-         class="nav_list"
-        >
-        &#9679;&nbsp;Understanding&nbsp;ME<br>
-      </a>
-    
-      <a href="/galleryTerres.html" style="text-decoration: none" 
-         class="nav_list"
-        >
-        &#9679;&nbsp;Terres<br>
-      </a>
-    
-      <a href="/about.html" style="text-decoration: none" 
-         class="nav_list"
-        >
-        &#9679;&nbsp;Installations<br>
-      </a>
-    
-      <a href="/about.html" style="text-decoration: none" 
-         class="nav_list"
-        >
-        &#9679;&nbsp;Exteriors<br>
-      </a>
-    
-      <a href="/about.html" style="text-decoration: none" 
-         class="nav_list"
-        >
-        &#9679;&nbsp;Expositions<br>
-      </a>
-    
-      <a href="/about.html" style="text-decoration: none" 
-         class="nav_list"
-        >
-        &#9679;&nbsp;Contact<br>
-      </a>
-    
-  </div>
-  </div>
-
-  <div class="sidebar_card">
-    <p class="news_bar">
-    <a class="news_heading" style="text-decoration: none" href="">
-    &nbsp;&nbsp;EXPOSITIONS&nbsp;>&nbsp;>&nbsp;&nbsp;
-    </a>
-    </p>
-    
-    <iframe class="news_iframe"
-      src="simon-yung.github.io/website/news.html">
-    </iframe>
-
-  </div>
-
-    <!--<p class="sub_artist_name">
-      Helene.yousse@gmail.com<br>
-      +33&nbsp;546&nbsp;848&nbsp;115 +33&nbsp;788&nbsp;150&nbsp;768<br>
-      <a href="/website/404.html"style="text-decoration: none ;color:#000000"> Contact me ! </a>
-    </p>--> 
- </div>
-</div>
-    
-    <div class="main_gallery">
-     <!-- Image for the modal gallery -->
+  <body>
+    <div class="home"><h1 class="page-heading">Gallery Terres</h1><!-- Image for the modal gallery -->
 <!-- empty link for safety reason-->
 <img id="-1" style="height:0px;width:0px;" src=" /website/assets/images/broken.png " alt="something went wrong,<br>please try again.">
 
@@ -445,7 +335,7 @@
   <img class="modal_content" id="ImgModal">
   <div id="Caption"></div>
 </div>
+</div>
 
-    </div>
   </body>
 </html>
