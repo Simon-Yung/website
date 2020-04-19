@@ -15,11 +15,19 @@ html { box-sizing: border-box; }
 /*page layout*/
 .default_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
 
-.title_text { padding-left: 10px; padding-right: 10px; font: 400 16px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
+.text_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
 
-.text { padding-left: 10px; padding-right: 10px; font: 400 16px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
+.image_div { flex: 30%; padding: 0; margin: 0; }
 
-.sub_text { padding-left: 10px; padding-right: 10px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; }
+.image_div img { width: 100%; }
+
+.text_div { padding: 0; padding-left: 10px; padding-right: 10px; min-width: 250px; }
+
+.text_div .big { padding-left: 10px; padding-right: 10px; font: 400 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
+
+.text_div .med { padding-left: 10px; padding-right: 10px; font: 400 16px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
+
+.text_div .sml { padding-left: 10px; padding-right: 10px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; }
 
 /*sidebar styling*/
 .sidebar { flex: 20%; margin-top: 10px; margin-left: 10px; margin-right: 10px; padding: 0px; flex-wrap: wrap; }
