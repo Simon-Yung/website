@@ -68,7 +68,7 @@ html { box-sizing: border-box; }
 
 .big { padding-left: 10px; padding-right: 10px; font: 400 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
 
-.med { padding-left: 10px; padding-right: 10px; font: 400 16px/1.3 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
+.med { padding-left: 10px; padding-right: 10px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
 .sml { padding-left: 10px; padding-right: 10px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; }
 
