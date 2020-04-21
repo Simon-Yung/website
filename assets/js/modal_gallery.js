@@ -15,8 +15,12 @@ function openModalGallery(imageIDNumber) {
   var modalImg = document.getElementById("ImgModal");
   var captionText = document.getElementById("Caption");
   modal.style.display = "flex";
-  modalImg.src = img.src;
   captionText.innerHTML = img.alt;
+  //modalImg.src = img.src;
+  //console.log(img.src);
+  //var m = img.src.replace("images/", "images/thumbnails/");
+  //console.log(m);
+  modalImg.src = img.src.replace("images/thumbnails/", "images/large/");
 }
 
 //prev and next
@@ -29,7 +33,8 @@ function nextModal(n) {
   var modalImg = document.getElementById("ImgModal");
   var captionText = document.getElementById("Caption");
   modal.style.display = "flex";
-  modalImg.src = img.src;
+  //modalImg.src = img.src;
+  modalImg.src = img.src.replace("images/thumbnails/", "images/large/");
   captionText.innerHTML = img.alt;
 }
 
@@ -49,3 +54,11 @@ function closeModalGallery() {
 
   modal.style.display = "none";
 }
+
+// desactivate right click menu
+
+noContext = document.getElementById("ImgModal");
+
+noContext.addEventListener("contextmenu", e => {
+  e.preventDefault();
+});

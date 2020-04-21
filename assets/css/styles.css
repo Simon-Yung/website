@@ -3,7 +3,9 @@ html { box-sizing: border-box; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-/* color palette */
+a { text-decoration: none; }
+
+/*----------------------color palette----------------------*/
 /*
 #241917 marron fonce
 #3e2a21 marrron clair
@@ -12,104 +14,93 @@ html { box-sizing: border-box; }
 #614e40 beige
 #ccbdb3 clair
 */
-/*page layout*/
+/*----------------------page layout----------------------*/
 .default_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
 
-/*sidebar styling*/
-.sidebar { flex: 20%; margin-top: 10px; margin-left: 10px; margin-right: 10px; padding: 0px; flex-wrap: wrap; }
+/*----------------------sidebar styling----------------------*/
+.sidebar { flex: 20%; margin-top: 20px; margin-left: 20px; margin-right: 20px; padding: 0px; flex-wrap: wrap; }
 
-.sidebar_card { background-color: #ffffff; padding-bottom: 30px; margin-bottom: 20px; }
+.sidebar_card { background-color: #ffffff; margin-bottom: 20px; }
 
-/*title*/
-.header { margin-top: 10px; height: 15vw; width: 0; }
+/*----------------------title----------------------*/
+.header { margin-top: 10px; width: 100%; }
 
-/* .artist_name { position: relative; top: 0px; margin: 0; padding: 0; z-index: 1; font: 400 10vw/0.85 "Montserrat", sans-serif;  text-align: justify;   } .artist_sub_name { position: relative; top: 0px; margin: 0; padding: 0; z-index: 1; font: 400 3vw/0.85 "Montserrat", sans-serif;  } */
-.logo { position: relative; top: 20px; left: 30px; width: 30vw; margin: 0; padding: 0; z-index: 1; -webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10+ and Edge */ user-select: none; /* Standard syntax */ }
+/* .artist_name { position: relative; top: 0px; margin: 0; padding: 0; z-index: 1; font: 400 10vw/0.85 "Montserrat", sans-serif;  text-align: justify;   } .artist_sub_name { position: relative; top: 0px; margin: 0; padding: 0; z-index: 1; font: 400 3vw/0.85 "Montserrat", sans-serif;  } .logo { position: relative; top: 20px; left: 30px; width: 30vw; margin: 0; padding: 0; z-index: 1; -webkit-user-select: none; /* Safari -ms-user-select: none; /* IE 10+ and Edge user-select: none; /* Standard syntax } .logo:hover { filter: invert(35%) } */
+/*----------------------drop down menu----------------------*/
+.drop_down_button { background-color: black; height: 20px; }
 
-.logo:hover { filter: invert(35%); }
+.drop_down_menu { diplay: none; position: absolute; top: 20px; left: 0px; background-color: #000000; }
 
-/*flag menu*/
-.flag_menu { display: flex; padding-top: 10px; flex-wrap: wrap; flex-flow: row; align-items: center; justify-content: space-around; }
+.drop_down_content { font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin: 0; }
 
-.flag_menu a img { /*size hardcoded in sidebar*/ }
+.drop_down_content_highlight { font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin: 0; }
 
-/*nav list */
-.nav_list_box { padding-top: 10px; padding-left: 20px; padding-right: 20px; }
+.drop_down_bar:hover { transition: .3s ease; background-color: white; }
 
-.nav_list { font: 400 18px "Montserrat", sans-serif; color: #614e40; position: relative; left: 15px; }
+.drop_down_bar:hover .language_menu { transition: .3s ease; diaplay: bloc; }
 
-.nav_list_highlight { font: 400 20px "Montserrat", sans-serif; color: #000000; position: relative; left: 5px; }
+/*----------------------nav list----------------------*/
+.nav_list_box { padding-top: 10px; }
 
-.nav_list:hover { transition: .3s ease; font: 400 18px "Montserrat", sans-serif; color: #000000; position: relative; left: 5px; }
+.nav_list { font: 400 16px "Montserrat", sans-serif; color: #614e40; position: relative; left: 0px; }
 
-/*news*/
-.news_bar { background-color: black; margin-bottom: 0; }
+.nav_list_highlight { font: 400 16px "Montserrat", sans-serif; color: #000000; position: relative; left: -10px; }
 
-.news_heading { font: 400 18px "Montserrat", sans-serif; color: #ccbdb3; margin: 0; }
+.nav_list:hover { transition: .3s ease; font: 400 16px "Montserrat", sans-serif; color: #000000; position: relative; left: -10px; }
 
-.news_bar:hover { transition: .3s ease; background-color: white; margin-bottom: 0; }
+/*----------------------news----------------------*/
+.news_iframe { border: 0px; margin-top: 0; width: 100%; height: 100vh; }
 
-.news_bar:hover .news_heading { transition: .3s ease; font: 400 18px "Montserrat", sans-serif; color: #000000; }
+.news_text { padding: 0px; font: 400 14px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
-.news_iframe { border: 0px; margin-top: 0; padding: 0; width: 100%; height: 600px; }
+/*----------------------share----------------------*/
+.share_page { font: 400 16px "Montserrat", sans-serif; color: #614e40; position: absolute; bottom: -700px; }
 
-.news_text { padding-left: 10px; padding-right: 10px; font: 400 14px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
-
-/*----------------------text page----------------------*/
-.main_text { flex: 80%; padding-top: 5px; padding: 0px; margin: 0px; margin-top: 20px; display: flex; flex-flow: column; }
-
-.text_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
-
-.image_div { width: 40%; margin: 5px; }
-
-.image_div img { width: 100%; }
-
-.text_div { flex: 60%; padding: 0; padding-left: 10px; padding-right: 10px; /*min-width: 250px;*/ }
-
-.big { padding-left: 10px; padding-right: 10px; font: 400 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
-
-.med { padding-left: 10px; padding-right: 10px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
-
-.sml { padding-left: 10px; padding-right: 10px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; }
+.share_page a { font: 400 16px "Montserrat", sans-serif; color: #000000; }
 
 /*----------------------main body styling----------------------*/
 .main_gallery { flex: 80%; padding-top: 5px; padding: 0px; margin: 0px; margin-top: 20px; display: flex; flex-flow: row; }
 
-.column_main_page_thin { flex: 25%; padding-left: 10px; padding-right: 10px; margin: 0px; }
+.column_main_page_thin { flex: 25%; padding-left: 5px; padding-right: 5px; margin: 0px; }
 
-.column_main_page_thick { flex: 50%; padding: 0px; margin: 0px; }
+.column_main_page_thick { flex: 50%; padding-left: 5px; padding-right: 5px; margin: 0px; }
 
-/*video continer*/
-.video_container { position: relative; /* padding-bottom: 56.25%;  16:9 */ margin-bottom: 20px; /*height: 0;*/ padding: 5px; }
+/*----------------------video continer----------------------*/
+.video_container { position: relative; display: block; width: 100%; padding: 0; padding-bottom: 56.25%; margin: 0 0px 10px 0px; }
 
-/*.video_container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }*/
-.video_container video { width: 100%; }
+.video_container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
-/* .video_container img { width: 30%; position: absolulte; top:33%; left:33%; border-radius: 10px; } .video_container img:hover { background-color: #000000; }*/
-/* image container*/
-.image_container { display: block; position: relative; width: 100%; margin-bottom: 20px; padding: 5px; }
+/* .video_container { position: relative; padding-bottom: 56.25%;  16:9 height: 0; padding: 0px; } .video_container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } */
+/* .video_container img:hover { background-color: #000000; } */
+/*----------------------image container----------------------*/
+.image_container { display: block; position: relative; width: 100%; padding: 0; margin: 0 0px 5px 0px; }
+
+.image_container_first_row { position: relative; display: block; width: 100%; padding: 0; padding-bottom: 115%; margin: 0 0px 10px 0px; }
 
 .image_container img { width: 100%; }
 
-.overlay { position: absolute; bottom: 20px; /*because of padding*/ left: 10px; padding: 5px; z-index: 2; background: #000000; transition: .3s ease; opacity: 0; font: 18px "Montserrat", sans-serif; color: #ccbdb3; }
+.image_container_first_row img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.overlay { position: absolute; bottom: 20px; left: 10px; padding: 5px; z-index: 2; background: #000000; transition: .3s ease; opacity: 0; font: 18px "Montserrat", sans-serif; color: #ccbdb3; }
 
 .image_container:hover .overlay { opacity: 1; }
 
-.image_container:hover .image_container img { filter: grayscale(100%); }
+.image_container_first_row:hover .overlay { opacity: 1; }
+
+/*----------------------thumbnail gallery----------------------*/
+.modal_image { /*<-- image is thumbnail*/ cursor: pointer; transition: 0.3s; width: 100%; margin-bottom: 5px; }
 
 /*----------------modal gallery----------------*/
-.modal_image { /*<-- image is thumbnail*/ cursor: pointer; transition: 0.3s; width: 100%; margin-bottom: 20px; }
-
 .modal_image:hover { opacity: 0.7; }
 
 /* background */
 .modal { display: none; position: fixed; z-index: 3; padding: 0; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: #000000; /* Fallback color */ background-color: rgba(0, 0, 0, 0.9); vertical-align: middle; }
 
 /* Modal Content (image) */
-.modal_content { margin: auto; /*height:100%;*/ max-height: 100%; max-width: 100%; display: block; }
+.modal_content { margin: auto; /*height:100%;*/ max-height: 100%; max-width: 100%; display: block; /*---to make it harder to download--*/ /* add draggable="false";  in html */ }
 
 /* Caption of Modal Image */
-#Caption { display: block; position: fixed; bottom: 15vh; left: 10vw; background-color: #000000; padding: 10px; text-align: center; font: 400 22px/1 "Montserrat", sans-serif; color: #ffffff; z-index: 3000; }
+#Caption { display: block; position: fixed; bottom: 15vh; left: 10vw; background-color: #000000; padding: 10px; text-align: left; font: 400 16px/1 "Montserrat", sans-serif; color: #ffffff; z-index: 3000; }
 
 /* Add Animation */
 .modal_content, #caption { -webkit-animation-name: zoom; -webkit-animation-duration: 0.6s; animation-name: zoom; animation-duration: 0.6s; }
@@ -127,9 +118,9 @@ html { box-sizing: border-box; }
 
 /* other button */
 /* Next & previous buttons */
-.prev, .next { cursor: pointer; position: fixed; right: 5vw; width: auto; padding: 5px; color: white; font-weight: bold; font-size: 30px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none; -webkit-user-select: none; }
+.prev, .next { cursor: pointer; position: fixed; right: 5vw; width: auto; padding: 5px; color: white; font-weight: bold; font-size: 30px; transition: 0.6s ease; border-radius: 0 3px 3px 0; -webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10+ and Edge */ user-select: none; /* Standard syntax */ }
 
-.info { /*hidden display: none;*/ cursor: pointer; position: fixed; bottom: 15vh; left: 2vw; width: auto; background-color: #ffffff; color: #000000; font-weight: bold; font-size: 30px; transition: 0.6s ease; user-select: none; -webkit-user-select: none; }
+.info { /*hidden display: none;*/ cursor: pointer; position: fixed; bottom: 15vh; left: 2vw; width: auto; background-color: #ffffff; color: #000000; font-weight: bold; font-size: 30px; transition: 0.6s ease; -webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10+ and Edge */ user-select: none; /* Standard syntax */ }
 
 /* Position the "button" */
 .next { top: 60vh; }
@@ -138,5 +129,22 @@ html { box-sizing: border-box; }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover, .info:hover { color: #737373; }
+
+/*----------------------text page----------------------*/
+.text_page_flex { background-color: #ffffff; width: 40vw; display: flex; flex-wrap: wrap; flex-flow: row; }
+
+.main_text { flex: 80%; padding-top: 5px; padding: 0px; margin: 0px; margin-top: 20px; display: flex; flex-flow: column; }
+
+.image_div { width: 50%; margin: 10px; }
+
+.image_div img { width: 100%; padding: 5px; }
+
+.main_text big { padding-left: 10px; padding-right: 10px; font: 700 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
+
+.main_text p { padding-left: 10px; padding-right: 10px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; }
+
+.main_text b { padding-left: 10px; padding-right: 10px; font: 700 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
+
+.main_text small { padding-left: 10px; padding-right: 10px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; }
 
 /*# sourceMappingURL=styles.css.map */
