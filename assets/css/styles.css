@@ -17,6 +17,8 @@ a { text-decoration: none; }
 /*----------------------page layout----------------------*/
 .default_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
 
+.main_text { flex: 80%; padding: 0px; margin: 0px; display: flex; flex-flow: column; }
+
 /*----------------------sidebar styling----------------------*/
 .sidebar { flex: 20%; margin-top: 20px; margin-left: 20px; margin-right: 20px; padding: 0px; flex-wrap: wrap; }
 
@@ -27,17 +29,15 @@ a { text-decoration: none; }
 
 /* .artist_name { position: relative; top: 0px; margin: 0; padding: 0; z-index: 1; font: 400 10vw/0.85 "Montserrat", sans-serif;  text-align: justify;   } .artist_sub_name { position: relative; top: 0px; margin: 0; padding: 0; z-index: 1; font: 400 3vw/0.85 "Montserrat", sans-serif;  } .logo { position: relative; top: 20px; left: 30px; width: 30vw; margin: 0; padding: 0; z-index: 1; -webkit-user-select: none; /* Safari -ms-user-select: none; /* IE 10+ and Edge user-select: none; /* Standard syntax } .logo:hover { filter: invert(35%) } */
 /*----------------------drop down menu----------------------*/
-.drop_down_button { background-color: black; height: 20px; }
+.drop_down_box { position: relative; }
 
-.drop_down_menu { diplay: none; position: absolute; top: 20px; left: 0px; background-color: #000000; }
+.drop_down_button { background-color: black; height: 20px; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; }
 
-.drop_down_content { font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin: 0; }
+.drop_down_menu { display: none; z-index: 2; position: absolute; color: #ccbdb3; background-color: #000000; }
 
-.drop_down_content_highlight { font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin: 0; }
+.drop_down_menu a { font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin: 0; }
 
-.drop_down_bar:hover { transition: .3s ease; background-color: white; }
-
-.drop_down_bar:hover .language_menu { transition: .3s ease; diaplay: bloc; }
+.drop_down_box:hover .drop_down_menu { transition: .3s ease; display: block; }
 
 /*----------------------nav list----------------------*/
 .nav_list_box { padding-top: 10px; }
@@ -131,17 +131,21 @@ a { text-decoration: none; }
 .prev:hover, .next:hover, .info:hover { color: #737373; }
 
 /*----------------------text page----------------------*/
-.text_page_flex { background-color: #ffffff; width: 40vw; display: flex; flex-wrap: wrap; flex-flow: row; }
+.text_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
 
-.main_text { flex: 80%; padding-top: 5px; padding: 0px; margin: 0px; margin-top: 20px; display: flex; flex-flow: column; }
+.text_div { flex: 70%; padding: 10px; margin: 0px; }
 
-.image_div { width: 50%; margin: 10px; }
+.image_div { flex: 30%; margin: 0px; }
 
-.image_div img { width: 100%; padding: 5px; }
+.image_div img { width: 100%; padding-top: 5px; }
+
+table { vertical-align: top; border: 0px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; }
+
+table tbody tr td { vertical-align: top; }
 
 .main_text big { padding-left: 10px; padding-right: 10px; font: 700 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
 
-.main_text p { padding-left: 10px; padding-right: 10px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; }
+.main_text p { font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; }
 
 .main_text b { padding-left: 10px; padding-right: 10px; font: 700 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
