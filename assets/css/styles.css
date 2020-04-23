@@ -31,7 +31,7 @@ a { text-decoration: none; }
 
 /* .artist_name { position: relative; top: 0px; margin: 0; padding: 0; z-index: 1; font: 400 10vw/0.85 "Montserrat", sans-serif;  text-align: justify;   } .artist_sub_name { position: relative; top: 0px; margin: 0; padding: 0; z-index: 1; font: 400 3vw/0.85 "Montserrat", sans-serif;  } .logo { position: relative; top: 20px; left: 30px; width: 30vw; margin: 0; padding: 0; z-index: 1; -webkit-user-select: none; /* Safari -ms-user-select: none; /* IE 10+ and Edge user-select: none; /* Standard syntax } .logo:hover { filter: invert(35%) } */
 /*----------------------drop down menu----------------------*/
-.drop_down_box { position: -webkit-sticky; position: sticky; top: 0px; max-width: 300px; width: 100%; z-index: 2; }
+.drop_down_box { position: -webkit-sticky; position: sticky; top: 0px; /*max-width: 300px;*/ width: 100%; z-index: 2; }
 
 .drop_down_button { background-color: black; height: 25px; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin-bottom: 0; }
 
@@ -56,6 +56,8 @@ a { text-decoration: none; }
 .news_iframe { border: 0px; margin-top: 0; width: 100%; height: 130vh; }
 
 .news_text { padding: 0px; font: 400 12px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
+
+.news_text b { padding: 0px; font: 700 12px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
 /*----------------------share----------------------*/
 .share_page { font: 400 16px "Montserrat", sans-serif; color: #614e40; position: absolute; bottom: -700px; }
@@ -145,18 +147,20 @@ a { text-decoration: none; }
 
 .image_div img { width: 100%; padding-top: 5px; }
 
-table { vertical-align: top; border: 0px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; }
+/*----------------------text page table----------------------*/
+table { vertical-align: top; border: 0px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; margin: 0 10px 0 10Px; }
 
 table tbody tr td { vertical-align: top; }
 
-.main_text big { padding-left: 10px; padding-right: 10px; font: 700 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
+/*----------------------text page formating----------------------*/
+.main_text big { padding: 0 10px 0 10px; margin: 0px; font: 700 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
 
-.main_text p { padding-left: 10px; padding-right: 10px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
+.main_text p { padding: 0 10px 0 10px; margin: 0px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
-.main_text b { padding-left: 10px; padding-right: 10px; font: 700 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
+.main_text b { padding: 0 10px 0 10px; margin: 0px; font: 700 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
-.main_text small { padding-left: 10px; padding-right: 10px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; }
+.main_text small { padding: 0 10px 0 10px; margin: 0px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; }
 
-.image_container small { padding-left: 10px; padding-right: 10px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #ccbdb3; }
+.image_container small { padding: 0 10px 0 10px; margin: 0px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #ccbdb3; }
 
 /*# sourceMappingURL=styles.css.map */

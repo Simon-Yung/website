@@ -55,9 +55,15 @@ function closeModalGallery() {
   modal.style.display = "none";
 }
 
-// desactivate right click menu
+// desactivate right click menu 
 
 noContext = document.getElementById("ImgModal");
+
+noContext.addEventListener("contextmenu", e => {
+  e.preventDefault();
+});
+
+noContext = document.getElementById("ModalGallery");
 
 noContext.addEventListener("contextmenu", e => {
   e.preventDefault();
