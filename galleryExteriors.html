@@ -9,10 +9,12 @@
       <link rel="stylesheet" href="https://simon-yung.github.io/website/assets/css/styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
       <script src="https://simon-yung.github.io/website/assets/js/modal_gallery.js" defer> </script>
+      <script src="https://simon-yung.github.io/website/assets/js/iframe.js" defer> </script>
       <script src="https://simon-yung.github.io/website/assets/js/share.js" defer> </script>
   </head>
   <body class="default_page_flex">
     
+
 <div class="sidebar">
 
   <img class="header" src=" https://simon-yung.github.io/website/assets/images/home/logo.png ">
@@ -92,28 +94,42 @@
 
   <div class="sidebar_card">
     <div style="height:20px"></div>
-    <iframe class="news_iframe"
+    <iframe class="news_iframe" scrolling="no" 
       
-        src="https://simon-yung.github.io/website/news.html">
+        src="https://simon-yung.github.io/website/news.html" onload="resizeIframe(this)">
       
     </iframe>
 
+    <div class="pdf_box">
+    
+        <p class="news_text"><b>EXIL</b> I had to go, and since that day I have worked on the
+theme of exile and the pain of leaving.<br>
+In order not to leave alone, I invented traveling companionswho have neither face nor name, nor nationality or religion...
+        <a href="https://simon-yung.github.io/website/exil.pdf">(download .pdf)</a>
+        </p>
+
+      
+    </div>
+
   </div>
 
-    <div class="share_page">
-      Share this on :<br>
-      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweeter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          <div style="display:block; height:1px"></div>
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0"></script>
-      <div class="fb-share-button" data-href="https://simon-yung.github.io/website/galleryExteriors.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
-          <div style="display:block; height:5px"></div>
-      <a  data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
-      <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
-          <div style="display:block; height:5px"></div>
-      <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-      <script type="IN/Share" data-url="https://simon-yung.github.io/website/galleryExteriors.html"></script>
-    </div>
+
+
+
+  <div class="share_page">
+    Share this on :<br>
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweeter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div style="display:block; height:1px"></div>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v6.0"></script>
+    <div class="fb-share-button" data-href="https://simon-yung.github.io/website/galleryExteriors.html" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Partager</a></div>
+        <div style="display:block; height:5px"></div>
+    <a  data-pin-do="buttonBookmark" href="https://www.pinterest.com/pin/create/button/"></a>
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+        <div style="display:block; height:5px"></div>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+    <script type="IN/Share" data-url="https://simon-yung.github.io/website/galleryExteriors.html"></script>
+  </div>
  
 </div>
     
@@ -449,6 +465,8 @@ By H&#233;l&#232;ne Yousse&lt;br&gt;
 Photo credit: JC Pratt" onclick="openModalGallery( 10 )" />
 
     
+  
+
   
 
   
