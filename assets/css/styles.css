@@ -53,14 +53,17 @@ a { text-decoration: none; }
 .nav_list:hover { transition: .3s ease; font: 400 16px "Montserrat", sans-serif; color: #000000; position: relative; left: -10px; }
 
 /*----------------------news----------------------*/
-.news_iframe { border: 0px; margin-top: 0; width: 100%; height: 130vh; }
+.news_iframe { border: 0px; margin-top: 0; width: 100%; overflow: hidden; }
 
 .news_text { padding: 0px; font: 400 12px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
 .news_text b { padding: 0px; font: 700 12px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
+/*----------------------pdf----------------------*/
+.pdf_box { outline: 1px solid black; padding: 5px 10px 5px 10px; }
+
 /*----------------------share----------------------*/
-.share_page { font: 400 16px "Montserrat", sans-serif; color: #614e40; position: absolute; bottom: -700px; }
+.share_page { font: 400 16px "Montserrat", sans-serif; color: #614e40; }
 
 .share_page a { font: 400 16px "Montserrat", sans-serif; color: #000000; }
 
@@ -150,8 +153,7 @@ a { text-decoration: none; }
 /*----------------------text page table----------------------*/
 table { vertical-align: top; border: 0px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; margin: 0 10px 0 10Px; }
 
-table tbody tr td { vertical-align: top;
-  min-width: 20px; }
+table tbody tr td { vertical-align: top; min-width: 20px; }
 
 /*----------------------text page formating----------------------*/
 .main_text big { padding: 0 10px 0 10px; margin: 0px; font: 700 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
@@ -162,6 +164,6 @@ table tbody tr td { vertical-align: top;
 
 .main_text small { padding: 0 10px 0 10px; margin: 0px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; }
 
-.image_container small { padding: 0 10px 0 10px; margin: 0px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #ccbdb3; }
+.main_text small { padding: 0 10px 0 10px; margin: 0px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #ccbdb3; }
 
 /*# sourceMappingURL=styles.css.map */
