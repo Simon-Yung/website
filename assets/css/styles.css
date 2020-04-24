@@ -151,7 +151,7 @@ a { text-decoration: none; }
 table { vertical-align: top; border: 0px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; margin: 0 10px 0 10Px; }
 
 table tbody tr td { vertical-align: top;
-  width: 20px; }
+  min-width: 20px; }
 
 /*----------------------text page formating----------------------*/
 .main_text big { padding: 0 10px 0 10px; margin: 0px; font: 700 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
