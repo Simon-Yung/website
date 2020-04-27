@@ -16,11 +16,7 @@ function openModalGallery(imageIDNumber) {
   var captionText = document.getElementById("Caption");
   modal.style.display = "flex";
   captionText.innerHTML = img.alt;
-  //modalImg.src = img.src;
-  //console.log(img.src);
-  //var m = img.src.replace("images/", "images/thumbnails/");
-  //console.log(m);
-  modalImg.src = img.src.replace("images/thumbnails/", "images/large/");
+  modalImg.src = img.src.replace("/thumbnails", "/larges");
 }
 
 //prev and next
@@ -34,7 +30,7 @@ function nextModal(n) {
   var captionText = document.getElementById("Caption");
   modal.style.display = "flex";
   //modalImg.src = img.src;
-  modalImg.src = img.src.replace("images/thumbnails/", "images/large/");
+  modalImg.src = img.src.replace("/thumbnails", "/larges");
   captionText.innerHTML = img.alt;
 }
 
