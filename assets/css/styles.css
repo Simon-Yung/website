@@ -3,173 +3,83 @@ html { box-sizing: border-box; }
 
 *, *:before, *:after { box-sizing: inherit; }
 
-p, b, small, big { white-space: normal; }
+p, b { white-space: normal; }
 
 a { text-decoration: none; }
 
-/*----------------------color palette----------------------*/
-/*
-#241917 marron fonce
-#3e2a21 marrron clair
-#302521 gris chaud
-#292826 gris vert leger
-#614e40 beige
-#ccbdb3 clair
-*/
-/*----------------------page layout----------------------*/
-.default_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
+body { display: flex; flex-direction: row; margin: 0; padding: 0; background-color: #F0EEE7; }
 
-.main_text { flex: 80%; padding: 0px; margin: 0px; display: flex; flex-flow: column; }
+/*sidebar*/
+.sidebar_box { background-color: #e0674f; flex: 20%; height: 100vh; border: 0px; margin: 0; padding: 0; position: sticky; top: 0px; background-size: cover; }
 
-/*----------------------sidebar styling----------------------*/
-.sidebar { flex: 20%; margin-top: 20px; margin-left: 20px; margin-right: 20px; padding: 0px; flex-wrap: wrap; }
+.logo { /*background-color: #454545;*/ height: 10vw; display: flex; justify-content: center; align-items: center; margin: 5%; border: 5px solid #98301b; border-radius: 5px; }
 
-.sidebar_card { background-color: #ffffff; margin-bottom: 20px; }
+.logo a { font: 700 2.5vw "Montserrat", sans-serif; /*40px*/ text-align: justify; color: #ffffff; }
 
-/*----------------------title----------------------*/
-.header { margin-top: 10px; width: 100%; }
+.logo:hover a { font: 700 2.3vw "Montserrat", sans-serif; /*40px*/ color: #ffffff; transition: .3s ease; }
 
-.header:hover { filter: invert(35%); }
+/*bar for sidebar*/
+bar { display: block; background-color: #98301b; width: 90%; height: 20px; margin: 5%; }
 
-/*----------------------drop down menu----------------------*/
-.drop_down_box { position: -webkit-sticky; position: sticky; top: 0px; /*max-width: 300px;*/ width: 100%; z-index: 2; }
+/*navmenu*/
+.nav_menu_box { width: 100%; padding: 0 6% 0 5%; }
 
-.drop_down_button { background-color: black; height: 25px; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin-bottom: 0; }
+.nav_menu { display: block; width: 100%; font: 400 18px "Montserrat", sans-serif; color: #f3c0b6; letter-spacing: 1px; padding-right: 0px; text-align: right; }
 
-.drop_down_menu { position: absolute; display: none; width: 100%; color: #ccbdb3; background-color: #000000; margin-top: 0; }
+.nav_menu_highlight { display: block; width: 100%; font: 400 18px "Montserrat", sans-serif; color: #ffffff; letter-spacing: 1px; padding-right: 20px; text-align: right; }
 
-.drop_down_menu a { display: block; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; position: relative; left: 10px; }
+.nav_menu:hover { color: #ffffff; padding-right: 20px; transition: .3s ease; }
 
-.drop_down_menu a:hover { color: #ffffff; position: relative; left: 0px; transition: .3s ease; }
+/*page body*/
+.main_box { flex: 80%; border: 0px; display: flex; flex-direction: row; margin: 0; padding: 0; }
 
-.drop_down_box:hover .drop_down_menu { transition: .3s ease; display: block; }
+.large_row { flex: 50%; display: flex; flex-direction: column; margin: 0; padding: 0; align-items: center; }
 
-/*----------------------nav list----------------------*/
-.nav_list_box { padding-top: 10px; }
+.nested_row_div { flex: 100%; display: flex; flex-direction: row; margin: 0; padding: 0; }
 
-.nav_list { font: 400 16px "Montserrat", sans-serif; color: #614e40; position: relative; left: 0px; }
+.thin_row { flex: 25%; display: flex; flex-direction: column; margin: 0; padding: 0; align-items: center; }
 
-.nav_list_highlight { font: 400 16px "Montserrat", sans-serif; color: #000000; position: relative; left: -10px; }
+/*image container*/
+.image_container { display: block; position: relative; width: 98%; margin: 0 2% 2% 2%; box-shadow: 2px 2px rgba(0, 0, 0, 0.1); /* margin: 1%; background-color: rgba(255, 255, 255, 0.8); border-radius: 1%;*/ }
 
-.nav_list:hover { transition: .3s ease; font: 400 16px "Montserrat", sans-serif; color: #000000; position: relative; left: -10px; }
+.image_container img { width: 100%; height: 100%; }
 
-/*----------------------news----------------------*/
-.news_iframe { border: 0px; margin-top: 0; width: 100%; overflow: hidden; }
-
-.news_text { padding: 0px; font: 400 12px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
-
-.news_text b { padding: 0px; font: 700 12px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
-
-/*----------------------pdf----------------------*/
-.pdf_box { outline: 1px solid black; padding: 5px 10px 5px 10px; }
-
-/*----------------------share----------------------*/
-.share_page { font: 400 16px "Montserrat", sans-serif; color: #614e40; }
-
-.share_page a { font: 400 16px "Montserrat", sans-serif; color: #000000; }
-
-/*----------------------main body styling----------------------*/
-.main_gallery { flex: 80%; padding-top: 5px; padding: 0px; margin: 0px; margin-top: 20px; display: flex; flex-flow: row; }
-
-.column_main_page_thin { flex: 25%; padding-left: 5px; padding-right: 5px; margin: 0px; }
-
-.column_main_page_thick { flex: 50%; padding-left: 5px; padding-right: 5px; margin: 0px; }
-
-/*----------------------video continer----------------------*/
-.video_container { position: relative; display: block; width: 100%; padding: 0; padding-bottom: 56.25%; margin: 0 0px 10px 0px; }
-
-.video_container video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-/* for youtube videos .video_container { position: relative; padding-bottom: 56.25%;  16:9 height: 0; padding: 0px; } .video_container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; } */
-/* .video_container img:hover { background-color: #000000; } */
-/*----------------------image container----------------------*/
-.image_container { display: block; position: relative; width: 100%; padding: 0; margin: 0 0px 5px 0px; }
-
-.image_container_first_row { /*consistant height for the first row*/ position: relative; display: block; width: 100%; padding: 0; padding-bottom: 115%; margin: 0 0px 10px 0px; }
-
-.image_container img { width: 100%; }
-
-.image_container_first_row img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
-.overlay { position: absolute; bottom: 20px; left: 10px; padding: 5px; z-index: 2; background: #000000; transition: .3s ease; opacity: 0; font: 18px "Montserrat", sans-serif; color: #ccbdb3; }
+.overlay { position: absolute; bottom: 20px; left: 10px; padding: 5px; z-index: 2; background: #000000; transition: .3s ease; opacity: 0; font: 18px "Montserrat", sans-serif; color: #ffffff; }
 
 .image_container:hover .overlay { opacity: 1; }
 
-.image_container_first_row:hover .overlay { opacity: 1; }
+.image_container:hover img { filter: brightness(0.6); transition: .3s ease; }
 
-/*----------------------thumbnail gallery----------------------*/
-.modal_image { /*<-- image is the thumbnail*/ cursor: pointer; transition: 0.3s; width: 100%; margin-bottom: 5px; }
+/*video container*/
+.front_page_video { width: 99%; margin: 0 1% 1% 1%; box-shadow: 2px 2px rgba(0, 0, 0, 0.1); /* margin: 1%; background-color: rgba(255, 255, 255, 0.8); border-radius: 1%;*/ }
 
-/*----------------modal gallery----------------*/
-.modal_image:hover { opacity: 0.7; }
+.video_container { display: block; position: relative; width: 100%; padding: 0; margin: 0; }
 
-/* background */
-.modal { display: none; position: fixed; z-index: 3; padding: 0; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: #000000; /* Fallback color */ background-color: rgba(0, 0, 0, 0.9); vertical-align: middle; }
+.video_container video { width: 100%; height: 100%; }
 
-/* Modal Content (image) */
-.modal_content { margin: auto; /*height:100%;*/ max-height: 100%; max-width: 100%; display: block; /*---to make it harder to download--*/ /* also add draggable="false";  in html */ /* menu has been desactivated with js */ }
+.overlay { position: absolute; bottom: 20px; left: 10px; padding: 5px; z-index: 2; background: #000000; transition: .3s ease; opacity: 0; font: 18px "Montserrat", sans-serif; color: #ffffff; }
 
-/* Caption of Modal Image */
-#Caption { display: block; position: fixed; bottom: 15vh; left: 10vw; background: black; /*fallback*/ background-color: rgba(0, 0, 0, 0.5); padding: 10px; text-align: left; font: 400 16px/1 "Montserrat", sans-serif; color: #ffffff; z-index: 3000; }
+.image_container:hover .overlay { opacity: 1; }
 
-/*dots*/
-.dot_light { height: 15px; width: 15px; background-color: #bfbfbf; border-radius: 50%; display: inline-block; }
+/*text formating*/
+.main_text_box { flex: 80%; display: flex; flex-direction: column; align-items: center; font: 400 16px "Montserrat", sans-serif; margin: 0; padding: 0; }
 
-.dot_dark { height: 15px; width: 15px; background-color: #404040; border-radius: 50%; display: inline-block; }
+.text_box { flex: 100%; max-width: 50em; font: 400 16px "Montserrat", sans-serif; display: flex; flex-direction: column; background-color: #ffffff; margin: 0; padding: 10px; outline: 5px solid rgba(0, 0, 0, 0.1); }
 
-/* Add Animation */
-.modal_content, #caption { -webkit-animation-name: zoom; -webkit-animation-duration: 0.6s; animation-name: zoom; animation-duration: 0.6s; }
+.text_box .gallery { width: 100%; height: auto; display: flex; flex-direction: column; margin: 0; padding: 0; }
 
-@-webkit-keyframes zoom { from { -webkit-transform: scale(0); }
-  to { -webkit-transform: scale(1); } }
+.text_box .gallery img { width: 100%; height: auto; margin: 0; padding: 0.5%; }
 
-@keyframes zoom { from { transform: scale(0); }
-  to { transform: scale(1); } }
+.text_box .gallery .nested_gallery { height: auto; width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-around; margin: 0; padding: 0; }
 
-/* The Close Button */
-.close { position: fixed; top: 10vh; right: 5vw; color: #ffffff; font-size: 60px; font-weight: bold; transition: 0.3s; -webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10+ and Edge */ user-select: none; /* Standard syntax */ }
+.text_box .gallery .nested_gallery img { width: 50%; height: auto; margin: 0; }
 
-.close:hover, .close:focus { color: red; text-decoration: none; cursor: pointer; }
+.text_box h1 { font: 700 20px "Montserrat", sans-serif; color: #98301b; text-indent: 0; margin: 0; padding: 0; }
 
-/* other button */
-/* Next & previous buttons */
-.prev, .next { cursor: pointer; position: fixed; right: 5vw; width: auto; padding: 5px; color: white; font-weight: bold; font-size: 30px; transition: 0.6s ease; border-radius: 0 3px 3px 0; -webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10+ and Edge */ user-select: none; /* Standard syntax */ }
+.text_box b { font: 700 16px "Montserrat", sans-serif; color: #878787; text-indent: 0; margin: 0; padding: 0; }
 
-.info { /*hidden for now*/ display: none; cursor: pointer; position: fixed; bottom: 15vh; left: 2vw; width: auto; background-color: #ffffff; color: #000000; font-weight: bold; font-size: 30px; transition: 0.6s ease; -webkit-user-select: none; /* Safari */ -ms-user-select: none; /* IE 10+ and Edge */ user-select: none; /* Standard syntax */ }
+.text_box p { font: 400 16px "Montserrat", sans-serif; color: #878787; text-indent: 0; margin: 0; padding: 0; }
 
-/* Position the "button" */
-.next { top: 60vh; }
-
-.prev { bottom: 60vh; }
-
-/* On hover, add a black background color */
-.prev:hover, .next:hover, .info:hover { color: #737373; }
-
-/*----------------------text page----------------------*/
-.header_img { margin: 0; padding: 0; margin: 10px; width: 100%; height: 20vh; object-fit: cover; object-position: 50% 10%; }
-
-.text_page_flex { background-color: #ffffff; display: flex; flex-wrap: wrap; flex-flow: row; }
-
-.text_div { flex: 70%; padding: 0px; margin: 0px; }
-
-.image_div { flex: 30%; margin: 10px; }
-
-.image_div img { width: 100%; padding-top: 5px; }
-
-/*----------------------text page table----------------------*/
-table { vertical-align: top; border: 0px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: left; color: #614e40; margin: 0 10px 0 10Px; }
-
-table tbody tr td { vertical-align: top; min-width: 20px; }
-
-/*----------------------text page formating----------------------*/
-.main_text big { padding: 0 10px 0 10px; margin: 0px; font: 700 24px "Montserrat", sans-serif; text-align: center; color: #614e40; }
-
-.main_text p { padding: 0 10px 0 10px; margin: 0px; font: 400 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
-
-.main_text b { padding: 0 10px 0 10px; margin: 0px; font: 700 16px/1.5 "Montserrat", sans-serif; text-align: justify; color: #614e40; }
-
-.main_text small { padding: 10px; margin: 0px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #614e40; text-align: right; display: block; }
-
-/* .main_text small { padding: 0 10px 0 10px; margin: 0px; font: 400 12px "Montserrat", sans-serif; text-align: left; color: #ccbdb3; }*/
+.text_box small { display: block; text-align: right; font: 400 12px "Montserrat", sans-serif; color: #e0674f; text-indent: 0; margin: 0; padding: 0; }
 
 /*# sourceMappingURL=styles.css.map */
