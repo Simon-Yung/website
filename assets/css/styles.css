@@ -29,10 +29,10 @@ a { text-decoration: none; }
 /*----------------------title----------------------*/
 .header { margin-top: 10px; width: 100%; }
 
-.header:hover { filter: invert(35%); }
+.header:hover { filter: invert(0%); }
 
 /*----------------------drop down menu----------------------*/
-.drop_down_box { position: relative;*max-width: 300px;*/ width: 100%; z-index: 2; }
+.drop_down_box { position: relative;/*max-width: 300px;*/ width: 100%; z-index: 2; }
 
 .drop_down_button { background-color: black; height: 25px; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin-bottom: 0; }
 
