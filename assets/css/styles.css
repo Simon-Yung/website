@@ -40,7 +40,7 @@ a { text-decoration: none; }
 
 .drop_down_menu a { display: block; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; position: relative; left: 10px; }
 
-.drop_down_menu a:hover { color: #ffffff; position: relative; left: 0px; transition: .3s ease; }
+.drop_down_menu a:hover { color: #ffffff; position: relative; left: 15px; transition: .3s ease; }
 
 .drop_down_box:hover .drop_down_menu { transition: .3s ease; display: block; }
 
