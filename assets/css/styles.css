@@ -29,39 +29,37 @@ a { text-decoration: none; }
 /*----------------------title----------------------*/
 .header { margin-top: 10px; width: 100%; }
 
-.header:hover { filter: invert(0%); }
-
 /*----------------------drop down menu----------------------*/
-.drop_down_box { position: relative;/*max-width: 300px;*/ width: 100%; z-index: 2; }
+.drop_down_box { display: flex; flex-flow: column; position: relative; height: 1.5em; /*max-width: 300px;*/ width: 100%; align-items: left; background-color: #000000; }
 
-.drop_down_button { background-color: black; height: 25px; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin-bottom: 0; }
+.drop_down_button { font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; margin: 0; padding-left: 10px; }
 
-.drop_down_menu { position: absolute; display: none; width: 100%; color: #ccbdb3; background-color: #000000; margin-top: 0; }
+.drop_down_menu { position: absolute; top: 1.5em; display: none; width: 100%; color: #ccbdb3; background-color: #000000; margin-top: 0; }
 
-.drop_down_menu a { display: block; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; position: relative; left: 10px; }
+.drop_down_menu a { display: block; font: 400 16px "Montserrat", sans-serif; color: #ccbdb3; padding-left: 10px; }
 
-.drop_down_menu a:hover { color: #ffffff; position: relative; left: 15px; transition: .3s ease; }
+.drop_down_menu a:hover { color: #ffffff; position: relative; padding-left: 20px; transition: .3s ease; }
 
 .drop_down_box:hover .drop_down_menu { transition: .3s ease; display: block; }
 
 /*----------------------nav list----------------------*/
-.nav_list_box { padding-top: 10px; }
+.nav_list_box { padding: 0; margin: 0; }
 
-.nav_list { display: block; width: 100%; font: 400 16px "Montserrat", sans-serif; color: #614e40; padding-left: 0px; }
+.nav_list { display: block; width: 100%; font: 400 16px "Montserrat", sans-serif; color: #614e40; padding: 0 0 0 0; }
 
-.nav_list_highlight { display: block; width: 100%; font: 400 16px "Montserrat", sans-serif; color: #000000; padding-left: 10px; }
+.nav_list_highlight { display: block; width: 100%; font: 400 16px "Montserrat", sans-serif; color: #000000; padding: 0 0 0 10px; }
 
-.nav_list:hover { transition: .3s ease; color: #000000; position: relative; padding-left: 10px; }
+.nav_list:hover { transition: .3s ease; color: #000000; position: relative; padding: 0 0 0 10px; }
 
 /*----------------------news----------------------*/
-.news_iframe { border: 0px; margin-top: 0; width: 100%; overflow: hidden; }
+.news_iframe { border: 0px; margin: 0; width: 100%; overflow: hidden; }
 
 .news_text { padding: 0px; font: 400 12px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
 .news_text b { padding: 0px; font: 700 12px "Montserrat", sans-serif; text-align: justify; color: #614e40; }
 
 /*----------------------pdf----------------------*/
-.pdf_box { outline: 1px solid black; padding: 5px 10px 5px 10px; }
+.line { height: 1px; width: 80%; position: relative; left: 10%; background-color: #614e40; }
 
 /*----------------------share----------------------*/
 .share_page { font: 400 16px "Montserrat", sans-serif; color: #614e40; }
@@ -111,11 +109,6 @@ a { text-decoration: none; }
 
 /* Caption of Modal Image */
 #Caption { display: block; position: fixed; bottom: 15vh; left: 10vw; background: black; /*fallback*/ background-color: rgba(0, 0, 0, 0.5); padding: 10px; text-align: left; font: 400 16px/1 "Montserrat", sans-serif; color: #ffffff; z-index: 3000; }
-
-/*dots*/
-.dot_light { height: 15px; width: 15px; background-color: #bfbfbf; border-radius: 50%; display: inline-block; }
-
-.dot_dark { height: 15px; width: 15px; background-color: #404040; border-radius: 50%; display: inline-block; }
 
 /* Add Animation */
 .modal_content, #caption { -webkit-animation-name: zoom; -webkit-animation-duration: 0.6s; animation-name: zoom; animation-duration: 0.6s; }
